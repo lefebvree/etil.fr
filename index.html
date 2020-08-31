@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Etienne Lefebvre</title>
+    <link href="//cdn.materialdesignicons.com/2.3.54/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Abel|Source+Sans+Pro" rel="stylesheet">
+    <meta name="theme-color" content="#498de4">
+    <link rel=stylesheet href="css/styles.css">
+</style>
+</head>
+<body>
+    <div id="stripes" class="stripes">
+        <div class="row">
+            <div class="col-9"></div>
+            <div class="col-3 right"></div>
+        </div>
+        <div class="row">
+            <div class="col-4 left"></div>
+        </div>
+        <div class="row">
+            <div class="col-9"></div>
+            <div class="col-3 right"></div>
+        </div>
+        <div class="row">
+            <div class="col-4 left"></div>
+        </div>
+    </div>
+    <div class="container" id="main">
+        <div class="row" id="header">
+            <div class="col-6">
+                <div class="card">
+                    <div class="title">
+                        <h1>Etienne Lefebvre</h1>
+                        <a class="btn subtitle" href="mail:contact@etiennelefebvre.com">contact@etiennelefebvre.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="links">
+                    <span class="social">
+                        <a href="https://twitter.com/monospacedlife" target="_blank" rel="noreferrer">
+                            <i class="mdi mdi-twitter mdi-light"></i>
+                        </a>
+                        <a href="https://github.com/lefebvree" target="_blank" rel="noreferrer">
+                            <i class="mdi mdi-github-circle mdi-light"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/etiennelefebvre" target="_blank" rel="noreferrer">
+                            <i class="mdi mdi-linkedin mdi-light"></i>
+                        </a>
+                        <a href="resume.pdf" target="_blank" title="My résumé">
+                            <i class="mdi mdi-account-circle mdi-light"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 menu" id="menu">
+                <!--<i id="toggle-menu" class="toggle-menu mdi mdi-menu mdi-24px"></i>
+                <ul>
+                    <li>
+                        <span><a href="#about">about me</a></span>
+                    </li>
+                    <li>
+                        <span><a href="#experience">experience</a></span>
+                    </li>
+                    <li>
+                        <span><a href="#education">education</a></span>
+                    </li>
+                    <li>
+                        <span><a href="#work">work</a></span>
+                    </li>
+                    <li>
+                        <span><a href="#contact">contact</a></span>
+                    </li>
+                </ul>-->
+            </div>
+            <div class="col-10">
+                <div class="card content">
+                    <div>
+                        <h2>About me</h2>
+                        <div>
+                            <p>
+                                Hello, I'm Etienne Lefebvre,
+                            </p>
+                            <p>
+                                I'm a R&amp;D engineer at <a href="https://ziwit.com/" target="_blank">Ziwit</a>
+                                who graduated from the <a href="https://www.univ-lyon1.fr/" target="_blank">Université de Lyon</a>
+                                with a Master's degree in Artificial Intelligence.
+                            </p>
+                            <p>
+                                I enjoy building applications from start to finish, experimenting with old or trendy technologies,
+                                and I've specialized in web crawling of dynamic websites, from crawler's techniques and behavior,
+                                to their implementation in the real <i class="sout">world</i> web.
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div>
+
+                        <h2>Work</h2>
+
+                        <ul class="timeline">
+                            <li class="current">
+                                <h3>Research &amp; Development Engineer at Ziwit / HTTPCS (2019 - current)</h3>
+                                <ul>
+                                    <li>
+                                        Conception of a web crawler used in the mapping of dynamic websites access points, 
+                                        implementing a crawl policy based on URLs structural clustering and webgraphs to prioritize 
+                                        crawled pages diversity. The agent performs complex interaction scenarios with elements 
+                                        to trigger popup display, API call, and form submission through multiple pages.
+                                    </li>
+                                    <li>
+                                        Development of an <a href="https://www.httpcs.com/en/web-monitoring#section-6" target="_blank">
+                                        online virtual browser</a> able to record and replay navigation scenarios, 
+                                        with network &amp; DOM timings capture and element assertions, 
+                                        with support for Firefox (Marionette) and Chromium (Chrome DevTools Protocol).
+                                    </li>
+                                    <li>
+                                        Implementation of a proxy to capture requests parameters and metrics, 
+                                        and process data for HTTPCS Security scanner &amp; Integrity monitoring.
+                                    </li>
+                                    <li>
+                                        Development of a lightweight log aggregator for internal use based on Redis streams.
+                                    </li>
+                                    <li>
+                                        Conception of a model training pipeline with Tensorflow, learning string embeddings for potential 
+                                        vulnerability detection in URLs, based upon <a href="https://arxiv.org/abs/1802.03162" target="_blank">URLNet</a> 
+                                        and <a href="https://arxiv.org/abs/1702.08568" target="_blank">eXpose</a> papers.
+                                    </li>
+                                    <li>
+                                        Migration of applications &amp; web services to Docker images and Docker Swarm clusters.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Master's Degree in Artificial Intelligence (2019)</h3>
+                            </li>
+                            <li>
+                                <h3>Software Developer at Ziwit / HTTPCS (2017)</h3>
+                                <ul>
+                                    <li>
+                                        Development of a crawler agent for the <a href="https://www.httpcs.com/en/web-application-vulnerability-scanner" target="_blank" rel="noopener noreferrer">
+                                        HTTPCS Security scanner</a>, discovering and capturing all websites
+                                        endpoints.
+                                    </li>
+                                    <li>
+                                        Full-stack development on <a href="https://map.httpcs.com" target="_blank" rel="noopener noreferrer">map.HTTPCS.com</a> and <a href="https://httpcs.com" target="_blank" rel="noopener noreferrer">
+                                        HTTPCS.com</a> user console.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Licence in Computer Science (2017)</h3>
+                            </li>
+                            <li>
+                                <h3>DUT in Computer Science (2016)</h3>
+                            </li>
+                            <li>
+                                <h3>Web Developer at Ziwit / HTTPCS (2016)</h3>
+                                <ul>
+                                    <li>
+                                        Creation of the <a href="https://map.httpcs.com" target="_blank">map.HTTPCS.com</a> Cyber Attacks interactive website, mapping cyber threats in real time and 
+                                        providing alerts for registered websites.
+                                    </li>
+                                    <li>
+                                        Visual identity update and front-end development for <a href="https://httpcs.com" target="_blank" rel="noopener noreferrer">
+                                            HTTPCS.com</a>.
+                                    </li>
+                                    <li>
+                                        Implementation of an online <a href="https://www.httpcs.com/en/test-ssl-certificate" target="_blank">
+                                        SSL Certificate Validity checker</a> using OpenSSL.
+                                    </li>
+                                    <li>
+                                        Development of a PDF user reports generator using server-side LateX compilation.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr>
+
+                    <div>
+                        <p>
+                            You can reach me at <a href="mail:contact@etiennelefebvre.com">contact@etiennelefebvre.com</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dim-background"></div>
+    <script type="text/javascript">
+        let upd = () => {
+            let p = Math.trunc(new Date().getSeconds() / .6)
+            document.body.style.backgroundPosition = `${p}% 0%`
+
+            let a = Math.abs(p - 50) / 3
+            setTransformProperty(document.getElementById('stripes'), `translateY(${-a}em) skewY(${a}deg)`)
+            
+            setTimeout(()=> window.requestAnimationFrame(upd), 1000)
+        }
+
+        let setTransformProperty = (element, value) => {
+            element.style.webkitTransform = value
+            element.style.MozTransform = value
+            element.style.msTransform = value
+            element.style.OTransform = value
+            element.style.transform = value
+        }
+
+        upd()
+    </script>
+</body>
+</html>
