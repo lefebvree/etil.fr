@@ -33,16 +33,13 @@
                 <div class="card">
                     <div class="title">
                         <h1>Etienne Lefebvre</h1>
-                        <a class="btn subtitle" href="mail:contact@etil.fr">contact@etil.fr</a>
+                        <a class="btn subtitle" href="mail:hey@etil.fr">hey@etil.fr</a>
                     </div>
                 </div>
             </div>
             <div class="col-6">
                 <div class="links">
                     <span class="social">
-                        <a href="https://twitter.com/monospacedlife" target="_blank" rel="noreferrer">
-                            <i class="mdi mdi-twitter mdi-light"></i>
-                        </a>
                         <a href="https://github.com/lefebvree" target="_blank" rel="noreferrer">
                             <i class="mdi mdi-github-circle mdi-light"></i>
                         </a>
@@ -83,17 +80,16 @@
                         <h2>About me</h2>
                         <div>
                             <p>
-                                Hello, I'm Etienne Lefebvre,
+                                Hello I'm Etienne,
                             </p>
                             <p>
                                 I'm a software developer at <a href="https://www.datadoghq.com/" target="_blank">Datadog</a>
-                                who graduated from the <a href="https://www.univ-lyon1.fr/" target="_blank">Université de Lyon</a>
-                                with a Master's degree in Artificial Intelligence.
+                                who graduated from the Université de Lyon with a Master's degree in Artificial Intelligence.
                             </p>
                             <p>
                                 I enjoy building applications from start to finish, experimenting with old or trendy technologies,
-                                and I've specialized in web crawling of dynamic websites, from crawler's techniques and behavior,
-                                to their implementation in the real <i class="sout">world</i> web.
+                                and I've specialized in web crawling of dynamic websites — from crawler's techniques and behavior —
+                                to their implementation in the real web.
                             </p>
                         </div>
                     </div>
@@ -106,10 +102,10 @@
 
                         <ul class="timeline">
                             <li class="current">
-                                <h3>Software Developer at Datadog (2020 - current)</h3>
+                                <h3>Software Developer - Datadog (2020 - current)</h3>
                             </li>
                             <li>
-                                <h3>Research &amp; Development Engineer at Ziwit / HTTPCS (2019 - 2020)</h3>
+                                <h3>Research &amp; Development Engineer - Ziwit / HTTPCS (2019 - 2020)</h3>
                                 <ul>
                                     <li>
                                         Conception of a web crawler used in the mapping of dynamic websites access points,
@@ -144,7 +140,7 @@
                                 <h3>Master's Degree in Artificial Intelligence (2019)</h3>
                             </li>
                             <li>
-                                <h3>Software Developer at Ziwit / HTTPCS (2017)</h3>
+                                <h3>Software Developer - Ziwit / HTTPCS (2017)</h3>
                                 <ul>
                                     <li>
                                         Development of a crawler agent for the <a href="https://www.httpcs.com/en/web-application-vulnerability-scanner" target="_blank" rel="noopener noreferrer">
@@ -164,7 +160,7 @@
                                 <h3>DUT in Computer Science (2016)</h3>
                             </li>
                             <li>
-                                <h3>Web Developer at Ziwit / HTTPCS (2016)</h3>
+                                <h3>Web Developer - Ziwit / HTTPCS (2016)</h3>
                                 <ul>
                                     <li>
                                         Creation of the <a href="https://map.httpcs.com" target="_blank">map.HTTPCS.com</a> Cyber Attacks interactive website, mapping cyber threats in real time and
@@ -190,7 +186,7 @@
 
                     <div>
                         <p>
-                            You can reach me at <a href="mail:contact@etil.fr">contact@etil.fr</a>.
+                            You can reach me at <a href="mail:hey@etil.fr">hey@etil.fr</a>.
                         </p>
                     </div>
                 </div>
@@ -199,17 +195,17 @@
     </div>
     <div class="dim-background"></div>
     <script type="text/javascript">
-        let upd = () => {
-            let p = Math.trunc(new Date().getSeconds() / .6)
+        const upd = () => {
+            const p = Math.trunc(new Date().getSeconds() / .6)
             document.body.style.backgroundPosition = `${p}% 0%`
 
-            let a = Math.abs(p - 50) / 3
+            const a = Math.abs(p - 50) / 3
             setTransformProperty(document.getElementById('stripes'), `translateY(${-a}em) skewY(${a}deg)`)
 
-            setTimeout(()=> window.requestAnimationFrame(upd), 1000)
+            setTimeout(()=> window.requestAnimationFrame(upd), 10000)
         }
 
-        let setTransformProperty = (element, value) => {
+        const setTransformProperty = (element, value) => {
             element.style.webkitTransform = value
             element.style.MozTransform = value
             element.style.msTransform = value
