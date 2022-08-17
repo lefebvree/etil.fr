@@ -128,7 +128,7 @@ i.sout {
             transform-origin: 0;
 
     will-change: transform;
-    transition: transform 1s linear;
+    transition: transform 10s linear;
 }
 
 .stripes .row
