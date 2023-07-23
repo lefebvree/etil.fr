@@ -1,7 +1,5 @@
-
 body,
-html
-{
+html {
     font-size: 100%;
 
     margin: 0;
@@ -9,34 +7,30 @@ html
     min-height: 100%;
 }
 
-body
-{
+body {
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.5;
 
     color: #333447;
-    background-image: linear-gradient(to right bottom, #89f7fe 0%,#66a6ff 50%,#009efd 100%);
+    background-image: linear-gradient(to right bottom, #899ffe 0%, #66a6ff 50%, #2a68e1 100%);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
     will-change: background-position;
 }
 
-a
-{
+a {
 
     text-decoration: none;
 
     color: #498de4;
 }
 
-.content a
-{
+.content a {
     display: inline-block;
 }
 
-.content a:hover
-{
+.content a:hover {
     text-decoration: underline;
 }
 
@@ -44,38 +38,33 @@ i.sout {
     text-decoration: line-through;
 }
 
-.card
-{
+.card {
     margin-bottom: 1em;
 
     border-radius: 3px;
     background: white;
-    box-shadow: 0 5px 10px 0 rgba(7,17,27,.2);
+    box-shadow: 0 5px 10px 0 rgba(7, 17, 27, .2);
 }
 
-.card > div
-{
+.card>div {
     padding: 1em 1em;
 }
 
-.title
-{
+.title {
     width: -webkit-fit-content;
-    width:    -moz-fit-content;
-    width:         fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     margin-right: auto;
     margin-left: auto;
 }
 
-.title h1
-{
+.title h1 {
     margin: 0;
 
     text-align: center;
 }
 
-.btn
-{
+.btn {
     display: inline-block;
 
     padding: 3px 15px;
@@ -87,27 +76,24 @@ i.sout {
     color: #fff;
     border-radius: 1px;
     background-color: #498de4;
-    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
 }
 
-.btn:hover
-{
+.btn:hover {
     -webkit-transform: translateY(-1px);
-            transform: translateY(-1px);
+    transform: translateY(-1px);
 
-    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
 }
 
-.subtitle
-{
+.subtitle {
     position: absolute;
 
     padding: 3px 18px;
 }
 
 
-.cv
-{
+.cv {
     margin: 0 2em;
 
     vertical-align: top;
@@ -115,56 +101,50 @@ i.sout {
 
 
 
-.stripes
-{
+.stripes {
     position: fixed;
 
     width: 100%;
     height: 100%;
 
     -webkit-transform: skewY(15deg) translateY(-15em);
-            transform: skewY(15deg) translateY(-15em);
+    transform: skewY(15deg) translateY(-15em);
     -webkit-transform-origin: 0;
-            transform-origin: 0;
+    transform-origin: 0;
 
     will-change: transform;
     transition: transform 10s linear;
 }
 
-.stripes .row
-{
+.stripes .row {
     margin-top: 3em;
 }
 
 .stripes .row .left,
-.stripes .row .right
-{
+.stripes .row .right {
     height: 10em;
     margin: 0;
-    padding: .5rem 2%;;
+    padding: .5rem 2%;
+    ;
 }
 
-.stripes .row .left
-{
+.stripes .row .left {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3));
 }
 
-.stripes .row .right
-{
+.stripes .row .right {
     background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3));
 }
 
 
-.content
-{
+.content {
     border-top: #498de4 solid 2px;
 }
 
 
 
 
-.links
-{
+.links {
     position: absolute;
     right: 1em;
     bottom: 0;
@@ -173,8 +153,7 @@ i.sout {
 }
 
 
-.social .mdi
-{
+.social .mdi {
     font-size: 1.5em;
 
     margin-right: 1em;
@@ -182,37 +161,34 @@ i.sout {
     vertical-align: text-bottom;
 }
 
-.social a .mdi::before
-{
+.social a .mdi::before {
     transition: box-shadow .3s ease, -webkit-transform .25s ease;
     transition: transform .25s ease, box-shadow .3s ease;
     transition: transform .25s ease, box-shadow .3s ease, -webkit-transform .25s ease;
 
     text-shadow: rgba(0, 0, 0, .2) 0 0 10px;
 }
-.social a:hover .mdi::before
-{
+
+.social a:hover .mdi::before {
     -webkit-transform: translateY(-1px);
-            transform: translateY(-1px);
+    transform: translateY(-1px);
 
     text-shadow: rgba(0, 0, 0, .2) 0 1px 10px;
 }
 
-ul.timeline
-{
+ul.timeline {
     list-style-type: none;
 }
-ul.timeline > li
-{
+
+ul.timeline>li {
     position: relative;
 
     padding-bottom: 20px;
 }
 
-ul.timeline > li::after
-{
+ul.timeline>li::after {
     position: absolute;
-    top: .65em;
+    top: .5em;
     left: calc(-2.25em - 1px);
 
     width: .5em;
@@ -225,44 +201,38 @@ ul.timeline > li::after
     background-color: #fff;
 }
 
-ul.timeline > li.current::after
-{
-    border-style: dotted;
+ul.timeline>li.current::after {
+    border-style: dashed;
 }
 
-ul.timeline > li::before
-{
+ul.timeline>li::before {
     position: absolute;
     top: 0;
     left: -2em;
 
     width: 2px;
-    height: calc(100% + 2em);
+    height: calc(100% + 1em);
 
     content: '';
 
     background-color: #ccc;
 }
 
-ul.timeline > li:first-child::before
-{
+ul.timeline>li:first-child::before {
     top: 1em;
 
     height: calc(100% + 1em);
 }
 
-ul.timeline > li:last-child::before
-{
-    height: calc(100% - 1em);
+ul.timeline>li:last-child::before {
+    display: none;
 }
 
-ul.timeline h4
-{
+ul.timeline h4 {
     margin: 10px 0 0;
 }
 
-.card .latest-work
-{
+.card .latest-work {
     border-top: #e2e2e2 solid 2px;
     border-bottom: #e2e2e2 solid 2px;
     background-color: #f5f5f5;
@@ -277,8 +247,7 @@ ul.timeline h4
     margin-bottom: 1em !important;
 }
 
-.showcase .item
-{
+.showcase .item {
     padding: 20px 25px;
 
     transition: transform .3s ease, box-shadow .3s ease;
@@ -288,20 +257,17 @@ ul.timeline h4
     box-shadow: rgba(0, 0, 0, .1) 0 1px 15px;
 }
 
-.showcase .item:hover
-{
+.showcase .item:hover {
     transform: translateY(-2px);
 
     box-shadow: rgba(0, 0, 0, .2) 0 3px 25px;
 }
 
-.showcase .item h4
-{
+.showcase .item h4 {
     margin: 0;
 }
 
-.showcase .item > span
-{
+.showcase .item>span {
     font-weight: bold;
 
     display: block;
@@ -309,29 +275,25 @@ ul.timeline h4
     margin-bottom: .5em;
 }
 
-.showcase .item > span::before
-{
+.showcase .item>span::before {
     margin-right: .5em;
 
     content: '\2014';
 }
 
 
-.showcase .item a::after
-{
+.showcase .item a::after {
     font: normal normal normal 24px/1 'Material Design Icons';
     font-size: inherit;
 
     content: ' \F054';
 }
 
-.pills
-{
+.pills {
     margin-top: 15px;
 }
 
-.pills span
-{
+.pills span {
     font-weight: bold;
 
     display: inline-block;
@@ -352,21 +314,18 @@ ul.timeline h4
     box-shadow: rgba(0, 0, 0, .22) 0 1px 5px;
 }
 
-.pills span:last-child
-{
+.pills span:last-child {
     margin-right: 0;
 }
 
-.pills span:hover
-{
+.pills span:hover {
     -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    transform: scale(1.05);
 
     box-shadow: rgba(0, 0, 0, .3) 0 1px 7px;
 }
 
-.pills span i
-{
+.pills span i {
     margin-right: 7px;
 }
 
@@ -379,25 +338,21 @@ h2,
 h3,
 h4,
 h5,
-h6
-{
+h6 {
     font-family: 'Abel', sans-serif;
     font-weight: normal;
 }
 
-h1
-{
+h1 {
     font-size: 3rem;
 }
 
-h2
-{
+h2 {
     font-size: 2rem;
     margin-left: 1rem;
 }
 
-h3
-{
+h3 {
     font-size: 1.2rem;
     margin: 0.1rem 0;
 }
@@ -405,35 +360,29 @@ h3
 h3,
 h4,
 h5,
-h6
-{
+h6 {
     font-weight: bold;
 }
 
-h4
-{
+h4 {
     font-size: 1.125rem;
 }
 
-h5
-{
+h5 {
     font-size: 1rem;
 }
 
-h6
-{
+h6 {
     font-size: .875rem;
 }
 
-p
-{
+p {
     font-size: 1.125rem;
     font-weight: 200;
     line-height: 1.8;
 }
 
-hr
-{
+hr {
     height: 3px;
     margin: 0;
 
@@ -442,27 +391,25 @@ hr
 }
 
 
-.container
-{
+.container {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
     padding: 3em 0;
 }
 
-.row
-{
+.row {
     position: relative;
 
     width: 100%;
 }
 
-.row [class^=col]
-{
+.row [class^=col] {
     float: left;
 
     min-height: 2rem;
-    margin: .5rem 2%;;
+    margin: .5rem 2%;
+    ;
 }
 
 .col-1,
@@ -476,175 +423,140 @@ hr
 .col-6,
 .col-7,
 .col-8,
-.col-9
-{
+.col-9 {
     width: 96%;
 }
 
-.col-1-sm
-{
+.col-1-sm {
     width: 4.33%;
 }
 
-.col-2-sm
-{
+.col-2-sm {
     width: 12.66%;
 }
 
-.col-3-sm
-{
+.col-3-sm {
     width: 21%;
 }
 
-.col-4-sm
-{
+.col-4-sm {
     width: 29.33%;
 }
 
-.col-5-sm
-{
+.col-5-sm {
     width: 37.66%;
 }
 
-.col-6-sm
-{
+.col-6-sm {
     width: 46%;
 }
 
-.col-7-sm
-{
+.col-7-sm {
     width: 54.33%;
 }
 
-.col-8-sm
-{
+.col-8-sm {
     width: 62.66%;
 }
 
-.col-9-sm
-{
+.col-9-sm {
     width: 71%;
 }
 
-.col-10-sm
-{
+.col-10-sm {
     width: 79.33%;
 }
 
-.col-11-sm
-{
+.col-11-sm {
     width: 87.66%;
 }
 
-.col-12-sm
-{
+.col-12-sm {
     width: 96%;
 }
 
-.row::after
-{
+.row::after {
     display: table;
     clear: both;
 
     content: '';
 }
 
-@media only screen and (min-width: 33.75em)
-{
-    .container
-    {
+@media only screen and (min-width: 33.75em) {
+    .container {
         width: 80%;
     }
 
-    .card > div
-    {
+    .card>div {
         padding: 1em 2em;
     }
 }
 
-@media only screen and (min-width: 45em)
-{
-    .col-1
-    {
+@media only screen and (min-width: 45em) {
+    .col-1 {
         width: 4.33%;
     }
 
-    .col-2
-    {
+    .col-2 {
         width: 12.66%;
     }
 
-    .col-3
-    {
+    .col-3 {
         width: 21%;
     }
 
-    .col-4
-    {
+    .col-4 {
         width: 29.33%;
     }
 
-    .col-5
-    {
+    .col-5 {
         width: 37.66%;
     }
 
-    .col-6
-    {
+    .col-6 {
         width: 46%;
     }
 
-    .col-7
-    {
+    .col-7 {
         width: 54.33%;
     }
 
-    .col-8
-    {
+    .col-8 {
         width: 62.66%;
     }
 
-    .col-9
-    {
+    .col-9 {
         width: 71%;
     }
 
-    .col-10
-    {
+    .col-10 {
         width: 79.33%;
     }
 
-    .col-11
-    {
+    .col-11 {
         width: 87.66%;
     }
 
-    .col-12
-    {
+    .col-12 {
         width: 96%;
     }
 
-    .card > div
-    {
+    .card>div {
         padding: 1em 3em;
     }
 
-    .menu .toggle-menu
-    {
+    .menu .toggle-menu {
         display: none;
     }
 
-    .menu ul
-    {
+    .menu ul {
         -webkit-transform: translateX(0%);
-                transform: translateX(0%);
+        transform: translateX(0%);
     }
 }
 
-@media only screen and (min-width: 60em)
-{
-    .container
-    {
+@media only screen and (min-width: 60em) {
+    .container {
         width: 75%;
         max-width: 60rem;
     }
